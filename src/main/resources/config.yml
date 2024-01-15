@@ -1,0 +1,45 @@
+locale: en_us
+# 数据保存方式。可选：database、file
+saveType: database
+# 数据库类型。可选值参照database配置块下的所有配置块名称
+datatype: mysql
+# 服务器内所有工具本地化名称
+tools:
+  - 'minecraft:iron_sword'
+  - 'minecraft:iron_axe'
+  - 'minecraft:iron_pickaxe'
+  - 'minecraft:iron_hoe'
+# 数据库配置
+database:
+  # 最小连接池数量
+  pool-size: 5
+  # mysql数据库配置
+  mysql:
+    # 数据库地址
+    host: localhost
+    # 数据库端口
+    port: 3306
+    # 数据库用户名
+    username: jobscraft
+    # 数据库密码
+    password: jobscraft
+    # 数据库名称
+    basename: jobscraft
+  sqlite:
+    # 数据库文件地址
+    path: data.db
+    # 数据库用户名
+    username: root
+    # 数据库密码
+    password: root
+  postgresql:
+    # 数据库地址
+    host: localhost
+    # 数据库端口
+    port: 3306
+    # 数据库用户名
+    username: root
+    # 数据库密码
+    password: root
+    # 数据库名
+    basename: jobscraft

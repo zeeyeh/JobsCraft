@@ -1,0 +1,77 @@
+name: JobsCraft
+version: '${project.version}'
+main: com.zeeyeh.jobscraft.JobsCraft
+api-version: '1.16'
+authors: [ LingQi ]
+description: Careers plugin
+website: https://www.zeeyeh.com/
+depends:
+  - AttributePlus
+permissions:
+  JobsCraft.commands.jobs.*:
+    default: true
+    children:
+      JobsCraft.commands.jobs.list: true
+      JobsCraft.commands.jobs.info: true
+      JobsCraft.commands.jobs.produce: true
+      JobsCraft.commands.jobs.destroy: true
+      JobsCraft.commands.jobs.blend: true
+      JobsCraft.commands.jobs.detach: true
+      JobsCraft.commands.jobs.blank: true
+  JobsCraft.commands.jobs.list:
+    default: op
+  JobsCraft.commands.jobs.info:
+    default: op
+  JobsCraft.commands.jobs.produce:
+    default: op
+  JobsCraft.commands.jobs.destroy:
+    default: op
+  JobsCraft.commands.jobs.blend:
+    default: op
+  JobsCraft.commands.jobs.detach:
+    default: op
+  JobsCraft.commands.jobs.blank:
+    default: op
+  JobsCraft.commands.levels.*:
+    default: true
+    children:
+      JobsCraft.commands.levels.list: true
+      JobsCraft.commands.levels.info: true
+      JobsCraft.commands.levels.produce: true
+      JobsCraft.commands.levels.destroy: true
+      JobsCraft.commands.levels.blend: true
+      JobsCraft.commands.levels.detach: true
+      JobsCraft.commands.levels.blank: true
+  JobsCraft.commands.levels.list:
+    default: op
+  JobsCraft.commands.levels.info:
+    default: op
+  JobsCraft.commands.levels.produce:
+    default: op
+  JobsCraft.commands.levels.destroy:
+    default: op
+  JobsCraft.commands.levels.blend:
+    default: op
+  JobsCraft.commands.levels.detach:
+    default: op
+  JobsCraft.commands.levels.blank:
+    default: op
+  JobsCraft.commands.jobscraft.*:
+    default: true
+    children:
+      JobsCraft.commands.jobscraft.reload:
+        default: op
+  JobsCraft.event.jobscraft.break:
+    default: false
+  JobsCraft.event.jobscraft.craft:
+    default: false
+  JobsCraft.event.jobscraft.place:
+    default: false
+  JobsCraft.event.jobscraft.attack:
+    default: false
+  JobsCraft.event.jobscraft.interact:
+    default: false
+  JobsCraft.event.jobscraft.usetool:
+    default: false
+  JobsCraft.event.jobscraft.edible:
+    default: false
